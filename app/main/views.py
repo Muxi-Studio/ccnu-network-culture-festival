@@ -82,7 +82,7 @@ def fix_fix():
     return jsonify({}), 200
 
 @main.route('/fix/fix/movie/', methods=["POST"])
-def fix_movie()
+def fix_movie():
     id = request.get_json().get('id')
     img_url = request.get_json().get('img_url')
     try:
@@ -95,7 +95,7 @@ def fix_movie()
     return jsonify({}), 200
 
 @main.route('/fix/fix/anime/', methods=['POST'])
-def fix_anime()
+def fix_anime():
     id = request.get_json().get('id')
     img_url = request.get_json().get('img_url')
     try:
