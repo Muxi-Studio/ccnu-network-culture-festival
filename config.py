@@ -29,9 +29,9 @@ common configuration
 
 DIALECT = 'mysql'
 DRIVER = 'mysqldb'
-USERNAME = os.environ.get('MYSQLUSER')
-PASSWORD = os.environ.get('MYSQLPASSWORD')
-HOST = os.environ.get('MYSQLHOST')
+USERNAME = os.environ.get('MYSQLUSER_FESTIVAL')
+PASSWORD = os.environ.get('MYSQLPASSWORD_FESTIVAL')
+HOST = os.environ.get('MYSQLHOST_FESTIVAL')
 PORT = '3306'
 DATABASE = 'culture_festival_4th'
 
