@@ -107,6 +107,19 @@ def fix_anime():
         return jsonify({}), 500
     return jsonify({}), 200
 
+@main.route('/fix/fix/startup/', methods=['POST'])
+def fix_starup():
+    id = request.get_json().get('id')
+    img_url = request.get_json().get('img_url')
+    try:
+        ppclass = Startup.query.filter_by(id=id).first()
+        ppclass.img_url = img_url
+        db.session.add(ppclass)
+        db.session.commit()
+    except:
+        return jsonify({}), 500
+    return jsonify({}), 200
+
 @main.route('/upgrade/photo/', methods=['GET'])
 def upgrade_photo():
     photos = Photo.query.filter_by(is_confirm=True).all()
