@@ -11,7 +11,7 @@ Flask-Script==2.0.5
 Flask-SQLAlchemy==2.1
 Flask-WTF==0.12
 freeze==1.0.10
-html5lib==0.9999999
+html5lib==0.999999999
 idna==2.7
 itsdangerous==0.24
 Jinja2==2.8
