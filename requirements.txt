@@ -1,6 +1,6 @@
 alembic==0.8.6
 bleach==1.4.2
-certifi==2018.4.16
+certifi==2022.12.7
 chardet==3.0.4
 Flask==0.10.1
 Flask-Admin==1.4.0
